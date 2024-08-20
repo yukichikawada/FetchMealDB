@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "C2995EB0-F197-4981-804F-6DB97E78AB08"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "257760BB-7D37-4008-8784-C0FCA5710C3D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "FetchRecipes/Views/IngredientsAndMeasuresListView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "body"
+            landmarkType = "24">
+            <Locations>
+               <Location
+                  uuid = "257760BB-7D37-4008-8784-C0FCA5710C3D - 79e45c4183cfc53c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; SwiftUI.ForEach&lt;Swift.Array&lt;FetchRecipes.IngredientsAndMeasures&gt;, Swift.String, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(SwiftUI.Text, SwiftUI.Text)&gt;&gt;&gt; in FetchRecipes.IngredientsAndMeasuresListView.body.getter : some"
+                  moduleName = "FetchRecipes"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yukichikawada/Desktop/Job%20Hunts/2024/interviews/Fetch/FetchRecipes/FetchRecipes/Views/IngredientsAndMeasuresListView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15">
+               </Location>
+               <Location
+                  uuid = "257760BB-7D37-4008-8784-C0FCA5710C3D - 468b2699fda81a78"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (FetchRecipes.IngredientsAndMeasures) -&gt; SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(SwiftUI.Text, SwiftUI.Text)&gt;&gt; in closure #1 () -&gt; SwiftUI.ForEach&lt;Swift.Array&lt;FetchRecipes.IngredientsAndMeasures&gt;, Swift.String, SwiftUI.HStack&lt;SwiftUI.TupleView&lt;(SwiftUI.Text, SwiftUI.Text)&gt;&gt;&gt; in FetchRecipes.IngredientsAndMeasuresListView.body.getter : some"
+                  moduleName = "FetchRecipes"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yukichikawada/Desktop/Job%20Hunts/2024/interviews/Fetch/FetchRecipes/FetchRecipes/Views/IngredientsAndMeasuresListView.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
