@@ -12,10 +12,25 @@ struct MealListView: View {
     
     var body: some View {
         NavigationView {
-            List {
-                ForEach(viewModel.meals) { meal in
-                    NavigationLink(destination: MealDetailView(viewModel: .init(idMeal: meal.idMeal))) {
-                        Text(meal.strMeal)
+            VStack {
+                if viewModel.meals.isEmpty {
+                    Button {
+                        viewModel.fetchList()
+                    } label: {
+                        Text("Fetch Meals")
+                    }
+                } else {
+                    Button {
+                        viewModel.clearMeals()
+                    } label: {
+                        Text("Clear Meals")
+                    }
+                    List {
+                        ForEach(viewModel.meals) { meal in
+                            NavigationLink(destination: MealDetailView(viewModel: .init(idMeal: meal.idMeal))) {
+                                Text(meal.strMeal)
+                            }
+                        }
                     }
                 }
             }

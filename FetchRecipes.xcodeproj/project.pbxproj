@@ -17,6 +17,7 @@
 		894B83AF2C741148004D4A81 /* MealListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894B83AE2C741148004D4A81 /* MealListView.swift */; };
 		894B83B12C742731004D4A81 /* MealDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894B83B02C742731004D4A81 /* MealDetailView.swift */; };
 		894B83B32C742741004D4A81 /* MealDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894B83B22C742741004D4A81 /* MealDetailViewModel.swift */; };
+		894B83BA2C74FEA6004D4A81 /* IngredientsAndMeasuresView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894B83B92C74FEA6004D4A81 /* IngredientsAndMeasuresView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		894B83B02C742731004D4A81 /* MealDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealDetailView.swift; sourceTree = "<group>"; };
 		894B83B22C742741004D4A81 /* MealDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealDetailViewModel.swift; sourceTree = "<group>"; };
 		894B83B62C74F2FD004D4A81 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		894B83B92C74FEA6004D4A81 /* IngredientsAndMeasuresView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientsAndMeasuresView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 			children = (
 				894B83AE2C741148004D4A81 /* MealListView.swift */,
 				894B83B02C742731004D4A81 /* MealDetailView.swift */,
+				894B83B92C74FEA6004D4A81 /* IngredientsAndMeasuresView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -186,6 +189,7 @@
 				894B83982C73A23C004D4A81 /* ContentView.swift in Sources */,
 				894B83AD2C73DB75004D4A81 /* MealListViewModel.swift in Sources */,
 				894B83A92C73CE2D004D4A81 /* Meal.swift in Sources */,
+				894B83BA2C74FEA6004D4A81 /* IngredientsAndMeasuresView.swift in Sources */,
 				894B83962C73A23C004D4A81 /* FetchRecipesApp.swift in Sources */,
 				894B83B32C742741004D4A81 /* MealDetailViewModel.swift in Sources */,
 				894B83AF2C741148004D4A81 /* MealListView.swift in Sources */,

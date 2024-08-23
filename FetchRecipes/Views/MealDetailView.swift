@@ -14,27 +14,42 @@ struct MealDetailView: View {
         ScrollView {
             VStack(alignment: .leading, spacing: 24) {
                 // Header
-                Text(viewModel.mealDetail?.strMeal ?? "")
-                    .font(.title)
+                if let title = viewModel.mealDetails?.strMeal {
+                    Text(title)
+                        .font(.title)
+                } else {
+                    Text("Missing Name")
+                }
                 
                 // Section
                 Text("Instructions")
                     .font(.title2)
                     .padding(.bottom, 24)
-                Text(viewModel.mealDetail?.strInstructions ?? "")
+                if let instructions = viewModel.mealDetails?.strInstructions {
+                    Text(instructions)
+                } else {
+                    Text("Missing Instructions")
+                }
+                
                 
                 // Section
-                Divider()
-                Text("Ingredients / Measures")
-                    .font(.title2)
-                    .padding(.bottom, 24)
-                ForEach(viewModel.mealDetail?.ingredientsAndMeasures ?? []) { ingredient in
-                    HStack {
-                        Text(ingredient.ingredient)
-                        Text(ingredient.measure)
-                    }
+                if let ingredientsAndMeasures = viewModel.mealDetails?.ingredientsAndMeasures {
+                    Divider()
+                    IngredientsAndMeasuresView(ingredientsAndMeasures: ingredientsAndMeasures)
+                } else {
+                    Text("Missing Ingredients and Measures")
                 }
             }.padding(12)
+        }
+        .onAppear(perform: {
+            viewModel.fetchAndApplyMealDetails()
+        })
+        .alert("Failed to retrieve meal", isPresented: $viewModel.shouldRetry) {
+            Button {
+                viewModel.retry()
+            } label: {
+                Text("Retry")
+            }
         }
     }
 }
